@@ -1,0 +1,6 @@
+*** Test Cases ***,${email},${error},[TAGS],[Description]
+Empty email field should be rejected,,Invalid email address.,negative,
+Invalid email should be rejected,hello@world,Invalid email address.,negative,
+Local email field longer than 64 characters should be rejected,age1itxut2gm7dfdrvvjw70tpbye8lwlvby6zg7dt16374fu8b5rmlduxm50sg2qmr@fmail.com,Invalid email address.,"negative,bug, expected failure",Email with local field longer than 64 characters is invalid and should be rejected
+Domain email field longer than 255 characters should be rejected,invalid1@r47cktocfox19vrdm5eemimoo8w8fo27j2sax6b9zfuvm5r7t86g1fkmouwj1sqowd2n9lkprb8c8gqdnzvn58lcwevd77pxlpjesybbzs8jtgiqxsu2arefq1hvueomnikn16erxprjksu6mqorv9pjb16t58l4dh0ua1gy2c5njbcamffqmx2dmk9hadfwk3av2aaidxn9zkoi68a1sou00sfbrr45ekos1q0p4v0dledcf0y5a8i7wku3.com,Invalid email address.,"negative,bug,expected failure",Email with domain field longer than 255 characters is invalid and should be rejected
+Already registered email email should be rejected,test@user.com,An account using this email address has already been registered.,negative,

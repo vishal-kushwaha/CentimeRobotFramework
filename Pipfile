@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+robotframework = "*"
+robotframework-seleniumlibrary = "*"
+robotframework-pageobjectlibrary = "*"
+robotframework-datadriver = {extras = ["xls"],version = "*"}
+pandas = "*"
+numpy = "*"
+
+[requires]
+python_version = "3.8"
